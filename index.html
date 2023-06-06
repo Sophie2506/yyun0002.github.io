@@ -1,3 +1,11 @@
+ <!-- =======================================================
+  * Template Name: Logis
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +13,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Object Detection and Image Storage Services</title>
+  <title>Group 4 Object Detection and Query service</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,13 +37,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Logis
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+ 
 </head>
 
 <body>
@@ -54,10 +56,10 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="login.html">Home</a></li>
-          <li><a href="index.html" class="active">Object Detection</a></li>
-          <li><a href="imageQueries.html">Image Queries</a></li>
-          <li><a href="signUp.html">Sign Up</a></li>
+          <li><a href="https://fit5225-a2-group4.auth.us-east-1.amazoncognito.com/login?client_id=2did5vrg8u38kks2qaaisvfs40&response_type=code&scope=openid+profile&redirect_uri=https://yyun0002.github.io/index.html">Sign out</a></li>
+          <li><a href="index.html">Object Detection</a></li>
+          <li><a href="imageQueries.html" class="active">Image Queries</a></li>
+          <li><a href="" >Sign Up</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -70,67 +72,187 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Image Upload</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Our website offers the image processing capabilities which can detect objects from uploaded images. 
-            Names of all detected objects are attached to each image prior to saving into a secure storage.
+          <h2 data-aos="fade-up">Image Queries</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Furthermore, you can search for images by specifying a particular tags and object counts or directly delete an image 
+            from the database
           </p>
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="file" class="form-control" id="uploaded-image" placeholder="Please upload an image to the database">
-            <button type="submit" id="upload-button" class="btn btn-primary">Upload</button>
-          </form>
-          <h3 data-aos="fade-up"> Chosen Image</h3>
-          <output id="preview-image" ></output>
-          
-
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Users</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Objects Detected</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Developers</p>
-              </div>
-            </div><!-- End Stats Item -->
-          </div>
+          <p data-aos="fade-up" data-aos-delay="100">Lastly, further tag modification and addition is totally possible with our advanced infrastructre
+          </p> 
         </div>
-
-        <div class="col-lg-3 order-last order-lg-last" data-aos="zoom-out">
+        <div class="col-lg-3 order-1 order-lg-last hero-img" data-aos="zoom-out">
           <img src="assets/img/image-detection-img.jpeg" class="img-fluid mb-3 mb-lg-0" alt="">
           <img src="assets/img/image-detection-img-2.jpeg" class="img-fluid mb-3 mb-lg-0" alt="">
-        </div>
+        </div> 
       </div>
     </div>
   </section><!-- End Hero Section -->
 
-  <main id="main">
 
-    <!-- ======= Image Queries Section ======= -->
-    <section id="intro-to-query" class="intro-to-query">
-      <div class="container" data-aos="zoom-out">
 
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h3>What's more? - Image Queries</h3>
-            <p> You can search for a particular images based on tags and object counts</p>
-            <a class="cta-btn" href="imageQueries.html">Try now >>></a>
-          </div>
+    <!-- ======= featured Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item featured">
+              <h3>Search Images based on tags</h3>
+              <ul>
+                <li><i class="bi bi-check"></i> Users can find images based on their object names.</li>
+              </ul>
+              <button id="using-tags-button" class="buy-btn"> Try out now</button>
+            </div>
+          </div><!-- End featured Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item featured">
+              <h3>Find images that have a similar objects with your image</h3>
+              <ul>
+                <li><i class="bi bi-check"></i> You can send an image as part of your query. All images that contain similar objects will be returned. </li>
+              </ul>
+              <button id="using-tag-of-image-button" class="buy-btn"> Try out now</button>
+            </div>
+          </div><!-- End featured Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item featured">
+              <h3>Manual Addition or Removal of tags</h3>
+              <ul>
+                <li><i class="bi bi-check"></i> Furthermore, tag modification and addition is totally possible with our advanced infrastructure</li>
+              </ul>
+              <button id="add-or-remove-tag-button" class="buy-btn"> Try out now</button>
+            </div>
+          </div><!-- End featured Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item featured">
+              <h3>Image Deletion</h3>
+              <ul>
+                <li><i class="bi bi-check"></i> Lastly, you can delete an existing image from the database.</li>
+              </ul>
+              <button id="delete-image-button" class="buy-btn"> Try out now</button>
+            </div>
+          </div><!-- End featured Item -->
         </div>
 
       </div>
-    </section><!-- End Image Queries Section -->
+    </section><!-- End featured Section -->
 
+
+  <main id="main">    
+    <!-- ======= Find Images based on Tags Section ======= -->
+    <section id="intro-to-query" class="intro-to-query content-to-hide">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Find images based on tags</h3>
+            <p> Start by typing object names to narrow down images that you want to search </p>
+
+            <form  method="post" id="query-using-tag-form">
+              <button class="btn btn-primary" id="plus-button"> + </button>
+              <button class="btn btn-primary" type="submit" id="">Submit</button>
+              <div class="row">
+                <input class="minus-button" type="button" value="-" onclick="removeThisLine(this)"/>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" name="tag-name" class="form-control" id="tag-name" placeholder="Object name" required>
+                </div>
+                <div class="col-md-5 form-group mt-3 mt-md-0">
+                  <input type="number" min="1" max="20" class="form-control" value="1" name="tag-count" id="tag-count" placeholder="Count" required>
+                </div>
+              </div>
+            </form>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Links that match your query are displayed here"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Finding Images based on Tags Section -->
+
+    <!-- Querying using image section -->
+    <section id="query-using-image" class="intro-to-query content-to-hide">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Query Using Tags of An image</h3>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group mt-3">
+                  <input type="file" name="image-path" class="form-control" id="image-path" placeholder="Choose an image from your device" required>
+                </div>
+                <h5>Choosen Image</h5>
+                <output id="preview-image-3.3.2"></output>
+              </div>
+              <button class="btn btn-primary" id="send-image-query-button"> Send query </button>
+            </form>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Links to images that match with your uploaded image are displayed here"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <!-- End Querying using image section -->
+
+    <!-- Add or remove tags section -->
+    <section id="add-or-remove-tags" class="intro-to-query content-to-hide">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Operation on tag names</h3>
+            <form action="" method="post" class="php-email-form" id="remove-or-add-tags-form">
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="url" name="image-S3-url-3.3.3" class="form-control" id="image-S3-url-3.3.3" placeholder="Please enter your image's public URL" required>
+                </div>
+                <div class="col-md-5 form-group">
+                  <label for="myDropdown" class="form-control" hidden="true"></label>
+                  <select class="form-control" id="myDropdown" name="myDropdown" value="Remove Or Add?">
+                    <option value="1">Remove</option>
+                    <option value="0">Add</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-primary" id="plus-button-3.3.3"> + </button>
+              <button class="btn btn-primary" type="submit" id="">Submit</button>
+              <div class="row">
+                <input class="minus-button" type="button" value="-" onclick="removeThisLinePart333(this)"/>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" name="tag-name" class="form-control" id="tag-name" placeholder="Tag name" required>
+                </div>
+                <div class="col-md-5 form-group mt-3 mt-md-0">
+                  <input type="number" min="1" max="20" class="form-control" value="1" name="tag-count" id="tag-count" placeholder="Count" required>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Finding Images based on Tags Section -->
+      <!-- Deleting Image Section -->
+    <section id="delete-image-section" class="intro-to-query content-to-hide">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Delete an existing image</h3>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group mt-3">
+                  <input type="url" name="image-S3-url" class="form-control" id="image-S3-url" placeholder="Please enter your image's public URL" required>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit" id="delete-image-button">Delete Image</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Deleting Image Section -->
+
+
+  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -190,7 +312,7 @@
       </div>
     </div>
 
-  </footer><!-- End Footer -->
+  </footer>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -205,11 +327,8 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- AWS SDK file-->
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.932.0.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/imageUpload.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
